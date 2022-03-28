@@ -4,11 +4,9 @@ $database = "sportnation";
 $username = "root";
 $password = "";
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
+$connect = mysqli_connect($servername, $username, $password, $database);
 // Check connection
-if (!$conn) {
+if (!$connect) {
     die("Connection failed: " . mysqli_connect_error());
 }
-echo "Connected successfully";
-mysqli_close($conn);
 ?>
